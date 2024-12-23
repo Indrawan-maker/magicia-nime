@@ -3,7 +3,7 @@
 import { FileSearch } from "@phosphor-icons/react/dist/ssr"
 import Link from "next/link"
 
-const NotFound = () => {
+const Page = () => {
     return (
         <div className="min-h-screen max-w-xl mx-auto flex justify-center items-center">
             <div className="flex justify-center items-center gap-4 flex-col">
@@ -16,4 +16,4 @@ const NotFound = () => {
     )
 }
 
-export default NotFound
+export default Page

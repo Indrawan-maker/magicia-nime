@@ -7,11 +7,8 @@ const Header = ({title, linkHref, linkTitle}) => {
         ?
         <Link href={linkHref} className="md:text-xl text-md underline 
         hover:text-color-accent text-color-primary transition-all">
-        {linkTitle}
-        </Link>
-        : 
-        null
-        }
+        {linkTitle}</Link>
+        : null}
         </div>
     )
 }

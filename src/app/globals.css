@@ -18,3 +18,28 @@ img {
 img:hover {
     scale: 103%;
 }
+
+.loading {
+    width: 120px;
+    height: 120px;
+    border:30px solid #eeeeee;
+    border-radius: 50%;
+    position: relative;
+    transform:rotate(45deg);
+}
+.loading::before {
+    content: "";
+    position: absolute;
+    inset:-30px;
+    border-radius: 50%;
+    border:30px solid #FFC639;
+    animation: p8 1s infinite linear;
+}
+
+@keyframes p8 {
+0%   {clip-path:polygon(50% 50%,0 0,0    0,0    0   ,0    0   ,0    0   )}
+25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0   ,100% 0   ,100% 0   )}
+50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0    100%,0    100%)}
+100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0    100%,0    0   )}
+}

@@ -21,7 +21,6 @@ const Page = () => {
         fetchData()
     }, [page])
 
-
     return (
         <>
             <HeaderMenu/>

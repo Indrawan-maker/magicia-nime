@@ -23,7 +23,7 @@ const Page = () => {
 
     return (
         <>
-            <HeaderMenu/>
+            <HeaderMenu title={`Anime Terpopuler #${page}`}/>
             <CardAnimeList api={topAnime}/>
             <Pagination/>
         </>

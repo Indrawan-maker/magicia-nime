@@ -3,4 +3,3 @@ export const getAnimeResponse = async(resource, query) => {
     const anime = await response.json()
     return anime
 }
-

@@ -1,5 +1,4 @@
 "use client"
-import { PauseCircle } from "@phosphor-icons/react"
 import YouTube from "react-youtube"
 
 const VideoPlayer = ({ youtubeId }) => {
@@ -8,8 +7,10 @@ const VideoPlayer = ({ youtubeId }) => {
         height:"250"
     }
     return (
-        <div className="fixed bottom-0 right-0">
-            <button><PauseCircle size={32} /></button>
+        <div className="fixed bottom-2 right-2">
+            <button className="text-color-primary float-right mr-1 mb-1 bg-color-secondary px-3">
+                X
+            </button>
             <YouTube VideoId={youtubeId} 
             onReady={(event) => event.target.pauseVideo()}
             opts={option}/>

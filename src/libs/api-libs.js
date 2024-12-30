@@ -13,5 +13,8 @@ export const reproduce = (data, gap ) => {
     const first = ~~(Math.random() * (data.length - gap) + 1)
     const last = first  + gap
 
-    console.log(first, last)
+    const response = {
+        data: data.slice(first, last)
+    }
+    return response
 }
